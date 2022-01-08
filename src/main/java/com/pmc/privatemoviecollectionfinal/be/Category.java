@@ -1,25 +1,16 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.pmc.privatemoviecollectionfinal.be;
 
 import java.util.Date;
 
-/**
- *
- * @author nedas
- */
-public class Movie {
+public class Category {
     private String name;
     private int userRating;
     private int imdbRating;
     private Date lastView;
     private String url;
-    private final int ID;
+    private int ID;
 
-    public Movie(String name, int userRating, int imdbRating, Date lastView, String url, int ID) {
+    public void Movie(String name, int userRating, int imdbRating, Date lastView, String url, int ID) {
         this.name = name;
         this.userRating = userRating;
         this.imdbRating = imdbRating;
@@ -28,6 +19,9 @@ public class Movie {
         this.ID = ID;
     }
 
+    public Category(int id) {
+        ID = id;
+    }
     public int getID() {
         return ID;
     }
