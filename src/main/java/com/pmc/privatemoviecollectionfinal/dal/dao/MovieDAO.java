@@ -10,8 +10,8 @@ public class MovieDAO {
 
     public List<Movie> getAllMovies() {
         List <Movie> allMovies= new ArrayList<>();
-        allMovies.add(new Movie());
+
         return allMovies;
-        //df
+
     }
 }
