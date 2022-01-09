@@ -1,68 +1,49 @@
 package com.pmc.privatemoviecollectionfinal.be;
 
 import java.util.Date;
+import java.util.List;
 
-public class Category {
-    private String name;
-    private int userRating;
-    private int imdbRating;
-    private Date lastView;
-    private String url;
-    private int ID;
 
-    public void Movie(String name, int userRating, int imdbRating, Date lastView, String url, int ID) {
-        this.name = name;
-        this.userRating = userRating;
-        this.imdbRating = imdbRating;
-        this.lastView = lastView;
-        this.url = url;
-        this.ID = ID;
-    }
+    public class Category {
+        private String name;
+        private int movieCount = 0;
+        private List<Movie> allMoviesInCategory;
+        private final int ID;
 
-    public Category(int id) {
-        ID = id;
-    }
-    public int getID() {
-        return ID;
-    }
+        public Category(int ID, String name, int movieCount, List<Movie> allMoviesInCategory) {
+            this.name = name;
+            this.movieCount = movieCount;
+            this.allMoviesInCategory = allMoviesInCategory;
+            this.ID = ID;
+        }
 
-    public String getName() {
-        return name;
-    }
+        public String getName() {
+            return name;
+        }
 
-    public int getUserRating() {
-        return userRating;
-    }
+        public int getMovieCount() {
+            return movieCount;
+        }
 
-    public int getImdbRating() {
-        return imdbRating;
-    }
+        public List<Movie> getAllMoviesInCategory() {
+            return allMoviesInCategory;
+        }
 
-    public Date getLastView() {
-        return lastView;
-    }
+        public int getID() {
+            return ID;
+        }
 
-    public String getUrl() {
-        return url;
-    }
+        public void setName(String name) {
+            this.name = name;
+        }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+        public void setMovieCount(int movieCount) {
+            this.movieCount = movieCount;
+        }
 
-    public void setUserRating(int userRating) {
-        this.userRating = userRating;
-    }
+        public void setAllMoviesInCategory(List<Movie> allMoviesInCategory) {
+            this.allMoviesInCategory = allMoviesInCategory;
+        }
 
-    public void setImdbRating(int imdbRating) {
-        this.imdbRating = imdbRating;
-    }
 
-    public void setUrl(String url) {
-        this.url = url;
     }
-
-    public void setLastView(Date lastView) {
-        this.lastView = lastView;
-    }
-}

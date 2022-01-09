@@ -5,8 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a112009e-69d0-4de9-8801-ed0d18f463b7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_media_11_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_media_mac_11_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pmc/privatemoviecollectionfinal/gui/controllers/PopupCategoriesController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pmc/privatemoviecollectionfinal/gui/controllers/PopupMovieController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pmc/privatemoviecollectionfinal/gui/exceptions/modelException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/pmc/privatemoviecollectionfinal/gui/model/CategoryModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/pmc/privatemoviecollectionfinal/popupCategories.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/pmc/privatemoviecollectionfinal/popupMovie.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PrivateMovieCollectionFinal.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PrivateMovieCollectionFinal.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pmc/privatemoviecollectionfinal/be/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pmc/privatemoviecollectionfinal/be/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pmc/privatemoviecollectionfinal/bll/IBLLFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pmc/privatemoviecollectionfinal/bll/IBLLFacade.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/pmc/privatemoviecollectionfinal/gui/controllers/MainWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pmc/privatemoviecollectionfinal/gui/controllers/MainWindowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pmc/privatemoviecollectionfinal/gui/model/MovieModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pmc/privatemoviecollectionfinal/gui/model/MovieModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,10 +58,24 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/com/pmc/privatemoviecollectionfinal" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.pmc.privatemoviecollectionfinal.gui.model" />
+      <recent name="com.pmc.privatemoviecollectionfinal.gui.controllers" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/com/pmc/privatemoviecollectionfinal" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.pmc.privatemoviecollectionfinal.gui.exceptions" />
+      <recent name="com.pmc.privatemoviecollectionfinal.gui.controllers" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="PMCApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -89,7 +117,7 @@
       <workItem from="1641585208928" duration="965000" />
       <workItem from="1641586375914" duration="540000" />
       <workItem from="1641609583352" duration="1783000" />
-      <workItem from="1641679933727" duration="2094000" />
+      <workItem from="1641679933727" duration="8002000" />
     </task>
     <task id="LOCAL-00001" summary="k">
       <created>1641586077980</created>

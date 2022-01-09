@@ -95,4 +95,13 @@ public class MainWindowController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
     }
+
+    public void refreshMovieList(boolean isEditing) {
+    }
+
+    public void setUpAlert(String message) {
+    }
+
+    public void refreshCategoryList() {
+    }
 }
