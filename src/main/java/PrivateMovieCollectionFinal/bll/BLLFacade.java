@@ -1,9 +1,9 @@
-package com.pmc.privatemoviecollectionfinal.bll;
+package PrivateMovieCollectionFinal.bll;
 
-import com.pmc.privatemoviecollectionfinal.be.Category;
-import com.pmc.privatemoviecollectionfinal.be.Movie;
-import com.pmc.privatemoviecollectionfinal.dal.DALFacade;
-import com.pmc.privatemoviecollectionfinal.dal.IDALFacade;
+import PrivateMovieCollectionFinal.be.Category;
+import PrivateMovieCollectionFinal.be.Movie;
+import PrivateMovieCollectionFinal.dal.DALFacade;
+import PrivateMovieCollectionFinal.dal.IDALFacade;
 import javafx.collections.ObservableList;
 
 import java.util.List;
@@ -52,7 +52,7 @@ public class BLLFacade implements IBLLFacade{
     }
 
     @Override
-    public Category getAllCategories() {
+    public List<Category> getAllCategories() {
         return null;
     }
 

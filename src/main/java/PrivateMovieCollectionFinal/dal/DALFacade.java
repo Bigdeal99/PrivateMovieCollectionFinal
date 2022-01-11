@@ -1,7 +1,7 @@
-package com.pmc.privatemoviecollectionfinal.dal;
+package PrivateMovieCollectionFinal.dal;
 
-import com.pmc.privatemoviecollectionfinal.be.Movie;
-import com.pmc.privatemoviecollectionfinal.dal.dao.MovieDAO;
+import PrivateMovieCollectionFinal.be.Movie;
+import PrivateMovieCollectionFinal.dal.dao.MovieDAO;
 
 import java.util.List;
 

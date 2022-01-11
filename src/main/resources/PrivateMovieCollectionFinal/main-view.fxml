@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane id="AnchorPane" prefHeight="448.0" prefWidth="849.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pmc.privatemoviecollectionfinal.gui.controllers.MainWindowController">
+<AnchorPane id="AnchorPane" prefHeight="448.0" prefWidth="849.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PrivateMovieCollectionFinal.gui.controllers.MainWindowController">
     <children>
         <VBox layoutX="14.0" layoutY="11.0" prefHeight="62.0" prefWidth="168.0">
             <children>

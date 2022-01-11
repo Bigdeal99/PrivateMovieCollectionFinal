@@ -1,11 +1,11 @@
-package com.pmc.privatemoviecollectionfinal.gui.model;
+package PrivateMovieCollectionFinal.gui.model;
 
-import com.pmc.privatemoviecollectionfinal.be.Category;
-import com.pmc.privatemoviecollectionfinal.be.Movie;
-import com.pmc.privatemoviecollectionfinal.bll.BLLFacade;
-import com.pmc.privatemoviecollectionfinal.bll.Exception.bllException;
-import com.pmc.privatemoviecollectionfinal.bll.IBLLFacade;
-import com.pmc.privatemoviecollectionfinal.gui.exceptions.modelException;
+import PrivateMovieCollectionFinal.be.Category;
+import PrivateMovieCollectionFinal.be.Movie;
+import PrivateMovieCollectionFinal.bll.BLLFacade;
+import PrivateMovieCollectionFinal.bll.Exception.bllException;
+import PrivateMovieCollectionFinal.gui.exceptions.modelException;
+import PrivateMovieCollectionFinal.bll.IBLLFacade;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
@@ -21,11 +21,7 @@ public class CategoryModel {
     Initialises the logic layer manager
      */
     private CategoryModel() {
-        try {
-            logiclayer = new BLLFacade();
-        } catch (IOException e) {
-            throw new IllegalStateException("Missing a required resource", e);
-        }
+        logiclayer = new BLLFacade();
     }
 
     /* Static 'instance' method */

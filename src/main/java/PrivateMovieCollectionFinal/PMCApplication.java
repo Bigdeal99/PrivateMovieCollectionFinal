@@ -1,4 +1,4 @@
-package com.pmc.privatemoviecollectionfinal;
+package PrivateMovieCollectionFinal;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

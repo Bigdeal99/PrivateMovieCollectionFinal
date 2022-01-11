@@ -1,6 +1,5 @@
-package com.pmc.privatemoviecollectionfinal.be;
+package PrivateMovieCollectionFinal.be;
 
-import java.util.Date;
 import java.util.List;
 
 

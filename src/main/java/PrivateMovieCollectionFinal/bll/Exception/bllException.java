@@ -1,4 +1,4 @@
-package com.pmc.privatemoviecollectionfinal.bll.Exception;
+package PrivateMovieCollectionFinal.bll.Exception;
 
 /**
  *

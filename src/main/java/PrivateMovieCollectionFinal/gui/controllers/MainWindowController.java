@@ -1,8 +1,8 @@
-package com.pmc.privatemoviecollectionfinal.gui.controllers;
+package PrivateMovieCollectionFinal.gui.controllers;
 
-import com.pmc.privatemoviecollectionfinal.be.Category;
-import com.pmc.privatemoviecollectionfinal.be.Movie;
-import com.pmc.privatemoviecollectionfinal.gui.model.MovieModel;
+import PrivateMovieCollectionFinal.be.Movie;
+import PrivateMovieCollectionFinal.be.Category;
+import PrivateMovieCollectionFinal.gui.model.MovieModel;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

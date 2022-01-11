@@ -1,6 +1,6 @@
-package com.pmc.privatemoviecollectionfinal.dal.dao;
+package PrivateMovieCollectionFinal.dal.dao;
 
-import com.pmc.privatemoviecollectionfinal.be.Movie;
+import PrivateMovieCollectionFinal.be.Movie;
 
 import java.util.ArrayList;
 import java.util.List;

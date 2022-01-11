@@ -3,8 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.pmc.privatemoviecollectionfinal.gui.controllers;
+package PrivateMovieCollectionFinal.gui.controllers;
 
+import PrivateMovieCollectionFinal.be.Movie;
+import PrivateMovieCollectionFinal.bll.Exception.bllException;
+import PrivateMovieCollectionFinal.gui.exceptions.modelException;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -15,9 +18,7 @@ import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
-import com.pmc.privatemoviecollectionfinal.be.Movie;
-import com.pmc.privatemoviecollectionfinal.gui.exceptions.modelException;
-import com.pmc.privatemoviecollectionfinal.gui.model.MovieModel;
+import PrivateMovieCollectionFinal.gui.model.MovieModel;
 
 import java.io.File;
 import java.net.URL;
@@ -91,7 +92,7 @@ public class PopupMovieController implements Initializable {
     }
 
     @FXML
-    private void saveMovie(ActionEvent event) throws modelException {
+    private void saveMovie(ActionEvent event) throws modelException, bllException {
         boolean isFound = false;
         int i = toIntExact(Math.round(mediaPlayer.getMedia().getDuration().toSeconds())); // Rounds up the seconds to an int so it can be inserted into the database
         String name = nameField.getText().trim(); //Eliminates all spaces (front and back. However not in the middle of the string )

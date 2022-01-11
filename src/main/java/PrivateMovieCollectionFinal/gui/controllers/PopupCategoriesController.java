@@ -3,11 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.pmc.privatemoviecollectionfinal.gui.controllers;
+package PrivateMovieCollectionFinal.gui.controllers;
 
-import com.pmc.privatemoviecollectionfinal.be.Category;
-import com.pmc.privatemoviecollectionfinal.gui.exceptions.modelException;
-import com.pmc.privatemoviecollectionfinal.gui.model.CategoryModel;
+import PrivateMovieCollectionFinal.be.Category;
+import PrivateMovieCollectionFinal.gui.exceptions.modelException;
+import PrivateMovieCollectionFinal.gui.model.CategoryModel;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

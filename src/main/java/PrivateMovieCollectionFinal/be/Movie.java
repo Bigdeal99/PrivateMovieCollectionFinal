@@ -3,14 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.pmc.privatemoviecollectionfinal.be;
+package PrivateMovieCollectionFinal.be;
 
 import java.util.Date;
 
-/**
- *
- * @author nedas
- */
+
 public class Movie {
     private String name;
     private int userRating;

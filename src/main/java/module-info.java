@@ -7,8 +7,8 @@ module com.pmc.privatemoviecollectionfinal {
     requires org.kordamp.bootstrapfx.core;
     requires javafx.media;
 
-    opens com.pmc.privatemoviecollectionfinal to javafx.fxml;
-    exports com.pmc.privatemoviecollectionfinal;
-    exports com.pmc.privatemoviecollectionfinal.gui.controllers;
-    opens com.pmc.privatemoviecollectionfinal.gui.controllers to javafx.fxml;
+    opens PrivateMovieCollectionFinal to javafx.fxml;
+    exports PrivateMovieCollectionFinal;
+    exports PrivateMovieCollectionFinal.gui.controllers;
+    opens PrivateMovieCollectionFinal.gui.controllers to javafx.fxml;
 }
