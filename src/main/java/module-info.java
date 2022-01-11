@@ -6,6 +6,8 @@ module com.pmc.privatemoviecollectionfinal {
     requires com.dlsc.formsfx;
     requires org.kordamp.bootstrapfx.core;
     requires javafx.media;
+    requires java.sql;
+    requires java.desktop;
 
     opens PrivateMovieCollectionFinal to javafx.fxml;
     exports PrivateMovieCollectionFinal;

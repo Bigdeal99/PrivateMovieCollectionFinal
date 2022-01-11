@@ -5,27 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a112009e-69d0-4de9-8801-ed0d18f463b7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/microsoft_sqlserver_mssql_jdbc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pmc/privatemoviecollectionfinal/PMCApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PrivateMovieCollectionFinal/PMCApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pmc/privatemoviecollectionfinal/be/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PrivateMovieCollectionFinal/be/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pmc/privatemoviecollectionfinal/be/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PrivateMovieCollectionFinal/be/Movie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pmc/privatemoviecollectionfinal/bll/BLLFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PrivateMovieCollectionFinal/bll/BLLFacade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pmc/privatemoviecollectionfinal/bll/Exception/bllException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PrivateMovieCollectionFinal/bll/Exception/bllException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pmc/privatemoviecollectionfinal/bll/IBLLFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PrivateMovieCollectionFinal/bll/IBLLFacade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pmc/privatemoviecollectionfinal/dal/DALFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PrivateMovieCollectionFinal/dal/DALFacade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pmc/privatemoviecollectionfinal/dal/IDALFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PrivateMovieCollectionFinal/dal/IDALFacade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pmc/privatemoviecollectionfinal/dal/dao/MovieDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PrivateMovieCollectionFinal/dal/dao/MovieDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pmc/privatemoviecollectionfinal/gui/controllers/MainWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PrivateMovieCollectionFinal/gui/controllers/MainWindowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pmc/privatemoviecollectionfinal/gui/controllers/PopupCategoriesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PrivateMovieCollectionFinal/gui/controllers/PopupCategoriesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pmc/privatemoviecollectionfinal/gui/controllers/PopupMovieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PrivateMovieCollectionFinal/gui/controllers/PopupMovieController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pmc/privatemoviecollectionfinal/gui/exceptions/modelException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PrivateMovieCollectionFinal/gui/exceptions/modelException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pmc/privatemoviecollectionfinal/gui/model/CategoryModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PrivateMovieCollectionFinal/gui/model/CategoryModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pmc/privatemoviecollectionfinal/gui/model/MovieModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PrivateMovieCollectionFinal/gui/model/MovieModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PrivateMovieCollectionFinal.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PrivateMovieCollectionFinal.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PrivateMovieCollectionFinal/gui/controllers/MainWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PrivateMovieCollectionFinal/gui/controllers/MainWindowController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/pmc/privatemoviecollectionfinal/main-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/PrivateMovieCollectionFinal/main-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/pmc/privatemoviecollectionfinal/popupCategories.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/PrivateMovieCollectionFinal/popupCategories.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/pmc/privatemoviecollectionfinal/popupMovie.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/PrivateMovieCollectionFinal/popupMovie.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,13 +43,17 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/com/pmc/privatemoviecollectionfinal" />
     <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
   </component>
@@ -117,7 +105,7 @@
       <workItem from="1641585208928" duration="965000" />
       <workItem from="1641586375914" duration="540000" />
       <workItem from="1641609583352" duration="1783000" />
-      <workItem from="1641679933727" duration="9812000" />
+      <workItem from="1641679933727" duration="11603000" />
     </task>
     <task id="LOCAL-00001" summary="k">
       <created>1641586077980</created>
@@ -126,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641586077980</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="k">
+      <created>1641862711059</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1641862711059</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
