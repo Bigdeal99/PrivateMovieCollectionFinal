@@ -5,11 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a112009e-69d0-4de9-8801-ed0d18f463b7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/microsoft_sqlserver_mssql_jdbc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/PrivateMovieCollectionFinal/bll/util/SearchMovie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/PrivateMovieCollectionFinal/dal/DAOex/daoException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/PrivateMovieCollectionFinal/dal/dao/CatDAO1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/PrivateMovieCollectionFinal/dal/dao/CategoryDao1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/PrivateMovieCollectionFinal/dal/dao/DatabaseConnectionDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PrivateMovieCollectionFinal.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PrivateMovieCollectionFinal.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PrivateMovieCollectionFinal/gui/controllers/MainWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PrivateMovieCollectionFinal/gui/controllers/MainWindowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PrivateMovieCollectionFinal/bll/BLLFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PrivateMovieCollectionFinal/bll/BLLFacade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PrivateMovieCollectionFinal/bll/IBLLFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PrivateMovieCollectionFinal/bll/IBLLFacade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PrivateMovieCollectionFinal/dal/DALFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PrivateMovieCollectionFinal/dal/DALFacade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PrivateMovieCollectionFinal/dal/IDALFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PrivateMovieCollectionFinal/dal/IDALFacade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PrivateMovieCollectionFinal/dal/dao/MovieDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PrivateMovieCollectionFinal/dal/dao/MovieDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PrivateMovieCollectionFinal/gui/model/CategoryModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PrivateMovieCollectionFinal/gui/model/CategoryModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PrivateMovieCollectionFinal/gui/model/MovieModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PrivateMovieCollectionFinal/gui/model/MovieModel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +28,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="JavaFXApplication" />
         <option value="Class" />
       </list>
     </option>
@@ -55,7 +64,7 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -105,7 +114,8 @@
       <workItem from="1641585208928" duration="965000" />
       <workItem from="1641586375914" duration="540000" />
       <workItem from="1641609583352" duration="1783000" />
-      <workItem from="1641679933727" duration="11603000" />
+      <workItem from="1641679933727" duration="12983000" />
+      <workItem from="1641948601968" duration="4867000" />
     </task>
     <task id="LOCAL-00001" summary="k">
       <created>1641586077980</created>

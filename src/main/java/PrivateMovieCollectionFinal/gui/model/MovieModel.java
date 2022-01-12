@@ -17,7 +17,7 @@ public class MovieModel {
     Initialises the logic layer manager
      */
     public MovieModel() {
-        logiclayer = new BLLFacade();
+        logiclayer = new BLLFacade(catDAO, movieDAO, categoryDAO, logiclayer);
     }
 
     /* Static 'instance' method */

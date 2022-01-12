@@ -13,6 +13,7 @@ import java.io.IOException;
 import java.util.List;
 
 public class CategoryModel {
+
     private static final CategoryModel categorySingleton = new CategoryModel();
     private final IBLLFacade logiclayer;
     private ObservableList<Category> allCategory;
@@ -21,7 +22,11 @@ public class CategoryModel {
     Initialises the logic layer manager
      */
     private CategoryModel() {
-        logiclayer = new BLLFacade();
+        try {
+            logiclayer = new BLLFacade();
+        } catch (IOException e) {
+            throw new IllegalStateException("Missing a required resource", e);
+        }
     }
 
     /* Static 'instance' method */
