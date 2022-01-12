@@ -8,6 +8,7 @@ module com.pmc.privatemoviecollectionfinal {
     requires javafx.media;
     requires java.sql;
     requires java.desktop;
+    requires com.microsoft.sqlserver.jdbc;
 
     opens PrivateMovieCollectionFinal to javafx.fxml;
     exports PrivateMovieCollectionFinal;

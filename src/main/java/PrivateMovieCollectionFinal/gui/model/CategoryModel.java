@@ -4,6 +4,7 @@ import PrivateMovieCollectionFinal.be.Category;
 import PrivateMovieCollectionFinal.be.Movie;
 import PrivateMovieCollectionFinal.bll.BLLFacade;
 import PrivateMovieCollectionFinal.bll.Exception.bllException;
+import PrivateMovieCollectionFinal.dal.DAOex.daoException;
 import PrivateMovieCollectionFinal.gui.exceptions.modelException;
 import PrivateMovieCollectionFinal.bll.IBLLFacade;
 import javafx.collections.FXCollections;
@@ -15,7 +16,7 @@ import java.util.List;
 public class CategoryModel {
 
     private static final CategoryModel categorySingleton = new CategoryModel();
-    private final IBLLFacade logiclayer;
+    private final IBLLFacade IBLLFacade1;
     private ObservableList<Category> allCategory;
 
     /*
@@ -23,7 +24,7 @@ public class CategoryModel {
      */
     private CategoryModel() {
         try {
-            logiclayer = new BLLFacade();
+            IBLLFacade1 = new BLLFacade();
         } catch (IOException e) {
             throw new IllegalStateException("Missing a required resource", e);
         }
@@ -40,8 +41,8 @@ public class CategoryModel {
     public ObservableList<Category> getAllCategories() throws modelException {
         allCategory = FXCollections.observableArrayList();
         try {
-            allCategory.addAll(logiclayer.getAllCategories());
-        } catch (bllException ex) {
+            allCategory.addAll(IBLLFacade1.getAllCategories());
+        } catch (bllException | daoException ex) {
             throw new modelException(ex.getMessage());
         }
         return allCategory;
@@ -54,9 +55,9 @@ public class CategoryModel {
     public void createPlaylist(String name) throws modelException {
         Category createdCategory;
         try {
-            createdCategory = logiclayer.createCategory(name);
+            createdCategory = IBLLFacade1.createCategory(name);
             allCategory.add(createdCategory);
-        } catch (bllException ex) {
+        } catch (bllException | daoException ex) {
             throw new modelException(ex.getMessage());
         }
     }
@@ -64,44 +65,44 @@ public class CategoryModel {
     public void editPlaylist(Category editingList, int categoryIndex, String name) throws modelException {
         Category updatedCategory;
         try {
-            updatedCategory = logiclayer.updatedCategory(editingList, name);
+            updatedCategory = IBLLFacade1.updatedCategory(editingList, name);
             allCategory.set(categoryIndex, updatedCategory);
-        } catch (bllException ex) {
+        } catch (bllException | daoException ex) {
             throw new modelException(ex.getMessage());
         }
     }
 
     public void deletePlaylist(Category selectedItem, int selectedIndex) throws modelException {
         try {
-            logiclayer.deleteCategory(selectedItem);
+            IBLLFacade1.deleteCategory(selectedItem);
             allCategory.remove(selectedIndex);
-        } catch (bllException ex) {
+        } catch (bllException | daoException ex) {
             throw new modelException(ex.getMessage());
         }
     }
 
     public void addToCategory(Category selectedItem, int selectedIndex, Movie selectedMovie) throws modelException {
         try {
-            logiclayer.addToCategory(selectedItem, selectedMovie);
+            IBLLFacade1.addToCategory(selectedItem, selectedMovie);
             List<Movie> newList = selectedItem.getAllMoviesInCategory();
             newList.add(selectedMovie);
             selectedItem.setAllMoviesInCategory(newList);
             selectedItem.setMovieCount(selectedItem.getMovieCount() + 1);
             allCategory.set(selectedIndex, selectedItem);
-        } catch (bllException ex) {
+        } catch (bllException | daoException ex) {
             throw new modelException(ex.getMessage());
         }
     }
 
     public void removeMovieFromCategory(Category selectedItem, int selectedIndex, Movie selectedMovie, int movieIndex) throws modelException {
         try {
-            logiclayer.removeFromCategory(selectedItem, selectedMovie);
+            IBLLFacade1.removeFromCategory(selectedItem, selectedMovie);
             List<Movie> newList = selectedItem.getAllMoviesInCategory();
             newList.remove(movieIndex);
             selectedItem.setAllMoviesInCategory(newList);
             selectedItem.setMovieCount(selectedItem.getMovieCount() - 1);
             allCategory.set(selectedIndex, selectedItem);
-        } catch (bllException ex) {
+        } catch (bllException | daoException ex) {
             throw new modelException(ex.getMessage());
         }
     }

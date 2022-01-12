@@ -19,14 +19,10 @@ public class BLLFacade implements IBLLFacade{
     /*
     Initialises all classes in DAL
      */
-    public Manager() throws IOException {
+    public BLLFacade() throws IOException {
         logiclayer = new DALFacade();
         searchforMovie = new SearchMovie();
     }
-
-
-
-
 
     @Override
     public List<Category> getAllCategories() throws bllException {

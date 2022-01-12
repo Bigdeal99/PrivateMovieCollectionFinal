@@ -23,7 +23,6 @@ import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
-import java.awt.*;
 import java.awt.TextField;
 import java.io.File;
 import java.io.IOException;
@@ -105,7 +104,7 @@ public class MainWindowController implements Initializable {
                 try {
                     movieModel.updateMovieRating(movieToBeRated, movieIndex, ratingChoice.getSelectionModel().getSelectedItem());
                     refreshMovieList(false);
-                } catch (modelException | bllException ex) {
+                } catch (modelException ex) {
                     setUpAlert(ex.getMessage());
                 }
             }
@@ -249,7 +248,7 @@ public class MainWindowController implements Initializable {
             try {
                 movieModel.deleteMovie(movieTableView.getSelectionModel().getSelectedItem(), movieTableView.getSelectionModel().getSelectedIndex()); // calls delete playlist from playlistModel
                 refreshMovieList(true);
-            } catch (modelException | bllException ex) {
+            } catch (modelException ex) {
                 setUpAlert(ex.getMessage());
             }
         }
