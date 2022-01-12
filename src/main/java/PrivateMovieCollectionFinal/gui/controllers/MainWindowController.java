@@ -2,7 +2,6 @@ package PrivateMovieCollectionFinal.gui.controllers;
 
 import PrivateMovieCollectionFinal.be.Movie;
 
-import java.awt.Button;
 import java.awt.Desktop;
 import PrivateMovieCollectionFinal.be.Category;
 import PrivateMovieCollectionFinal.bll.Exception.bllException;
@@ -23,7 +22,6 @@ import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
-import java.awt.TextField;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
@@ -149,14 +147,14 @@ public class MainWindowController implements Initializable {
     private void setUpScenes(int whichScene, boolean isEditing) throws IOException {
         Parent root1;
         if (whichScene == 1) { //If the scene needed is category view
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/mymoviesassigment/gui/view/popupCategories.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/PrivateMovieCollectionFinal/popupCategories.fxml"));
             root1 = (Parent) fxmlLoader.load();
             if (isEditing) {
                 fxmlLoader.<PopupCategoriesController>getController().setInfo(categoryTableView.getSelectionModel().getSelectedItem(), categoryTableView.getSelectionModel().getFocusedIndex()); // Tells the playlist controller class that the method will be editing its name
             }
             fxmlLoader.<PopupCategoriesController>getController().setController(this); //Sets controler by default for both creating and editing categories
         } else { // If the scene needed is movie view
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/mymoviesassigment/gui/view/popupMovie.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/PrivateMovieCollectionFinal/popupMovie.fxml"));
             root1 = (Parent) fxmlLoader.load();
             if (isEditing) {
                 fxmlLoader.<PopupMovieController>getController().setInfo(movieTableView.getSelectionModel().getSelectedItem(), movieTableView.getSelectionModel().getFocusedIndex());// Tells the song controller class that the method will be editing song info

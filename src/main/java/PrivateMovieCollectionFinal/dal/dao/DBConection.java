@@ -13,13 +13,15 @@ public class DBConection {
 
     private DBConection(){
         //Private constructor to restrict new instances
-        InputStream in = this.getClass().getClassLoader().getResourceAsStream("data/loginInfo.properties");
+        InputStream in = this.getClass().getClassLoader().getResourceAsStream("loginInfo.properties");
         try {
             configProp.load(in);
         } catch (IOException e) {
             try {
+                System.out.println(e);
                 throw new daoException(e.getMessage());
             } catch (daoException ex) {
+                System.out.println(ex);
                 Logger.getLogger(ex.getMessage());
             }
         }

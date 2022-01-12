@@ -5,18 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a112009e-69d0-4de9-8801-ed0d18f463b7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/PrivateMovieCollectionFinal/dal/dao/DBConection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/loginInfo.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PrivateMovieCollectionFinal/bll/BLLFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PrivateMovieCollectionFinal/bll/BLLFacade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PrivateMovieCollectionFinal/dal/DALFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PrivateMovieCollectionFinal/dal/DALFacade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PrivateMovieCollectionFinal/be/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PrivateMovieCollectionFinal/be/Movie.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/PrivateMovieCollectionFinal/dal/dao/CatDAO1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PrivateMovieCollectionFinal/dal/dao/CatDAO1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/PrivateMovieCollectionFinal/dal/dao/CategoryDao1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PrivateMovieCollectionFinal/dal/dao/CategoryDao1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PrivateMovieCollectionFinal/dal/dao/DatabaseConnectionDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PrivateMovieCollectionFinal/dal/dao/DBConection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PrivateMovieCollectionFinal/dal/dao/DBConection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/PrivateMovieCollectionFinal/dal/dao/MovieDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PrivateMovieCollectionFinal/dal/dao/MovieDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/PrivateMovieCollectionFinal/gui/controllers/MainWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PrivateMovieCollectionFinal/gui/controllers/MainWindowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PrivateMovieCollectionFinal/gui/model/CategoryModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PrivateMovieCollectionFinal/gui/model/CategoryModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PrivateMovieCollectionFinal/gui/model/MovieModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PrivateMovieCollectionFinal/gui/model/MovieModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/PrivateMovieCollectionFinal/popupCategories.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/PrivateMovieCollectionFinal/popupCategories.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/PrivateMovieCollectionFinal/popupMovie.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/PrivateMovieCollectionFinal/popupMovie.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +59,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/com/pmc/privatemoviecollectionfinal" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -72,6 +72,10 @@
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/com/pmc/privatemoviecollectionfinal" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main/resources/PrivateMovieCollectionFinal" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.pmc.privatemoviecollectionfinal.gui.exceptions" />
@@ -115,7 +119,7 @@
       <workItem from="1641609583352" duration="1783000" />
       <workItem from="1641679933727" duration="12983000" />
       <workItem from="1641948601968" duration="10123000" />
-      <workItem from="1641964016824" duration="836000" />
+      <workItem from="1641964016824" duration="6387000" />
     </task>
     <task id="LOCAL-00001" summary="k">
       <created>1641586077980</created>

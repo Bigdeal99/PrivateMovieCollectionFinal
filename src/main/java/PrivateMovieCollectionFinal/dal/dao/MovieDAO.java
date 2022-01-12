@@ -14,8 +14,8 @@ public class MovieDAO {
 
     public MovieDAO() {
         this.ds = new SQLServerDataSource();
-        ds.setDatabaseName(DBConection.getInstance().getProperty("databaseName"));
-        ds.setUser(DBConection.getInstance().getProperty("userName"));
+        ds.setDatabaseName(DBConection.getInstance().getProperty("dbname"));
+        ds.setUser(DBConection.getInstance().getProperty("username"));
         ds.setPassword(DBConection.getInstance().getProperty("password"));
         ds.setServerName(DBConection.getInstance().getProperty("ip"));
         ds.setPortNumber(Integer.parseInt(DBConection.getInstance().getProperty("port")));
@@ -27,11 +27,16 @@ public class MovieDAO {
             Statement statement = con.createStatement();
             ResultSet rs = statement.executeQuery(sqlStatement);
             while (rs.next()) { // Creates and adds movie objects into an array list
-                Movie mov = new Movie(rs.getString("name"), rs.getInt("userRating"), rs.getInt("imdbRating"), rs.getDate("lastview"), rs.getString("filelink"), rs.getInt("id"));
+                Movie mov = new Movie(rs.getString("name"),
+                        rs.getInt("rating"),
+                        rs.getDate("lastview"),
+                        rs.getString("filelink"),
+                        rs.getInt("id"));
                 allMovies.add(mov);
             }
             return allMovies; //Returns the full list
         } catch (SQLServerException ex) {
+            System.out.println(ex);
             throw new daoException("Cannot connect to server");
         } catch (SQLException ex) {
             throw new daoException("Cannot execute query");
@@ -46,7 +51,7 @@ public class MovieDAO {
             preparedStmt.setInt(1, newRating);
             preparedStmt.setInt(2, selectedItem.getID());
             preparedStmt.executeUpdate();
-            Movie mov = new Movie(selectedItem.getName(), newRating, selectedItem.getImdbRating(), selectedItem.getLastView(), selectedItem.getUrl(), selectedItem.getID()); //creates a new song object.
+            Movie mov = new Movie(selectedItem.getName(), newRating,  selectedItem.getLastView(), selectedItem.getUrl(), selectedItem.getID()); //creates a new song object.
             return mov;
         } catch (SQLServerException ex) {
             throw new daoException("Cannot connect to server");
@@ -64,7 +69,7 @@ public class MovieDAO {
             preparedStmt.setString(4, url);
             preparedStmt.setInt(5, movieToEdit.getID());
             preparedStmt.executeUpdate();
-            Movie mov = new Movie(name, rating, imdbrating, movieToEdit.getLastView(), url, movieToEdit.getID()); //creates a new song object.
+            Movie mov = new Movie(name, rating,  movieToEdit.getLastView(), url, movieToEdit.getID()); //creates a new song object.
             return mov;
         } catch (SQLServerException ex) {
             throw new daoException("Cannot connect to server");
@@ -83,7 +88,7 @@ public class MovieDAO {
             ps.setString(4, url);
             ps.addBatch();
             ps.executeBatch();
-            Movie mov = new Movie(name, rating, imdbrating, null, url, getNewestSongID()); // Creates a movie object
+            Movie mov = new Movie(name, rating, null, url, getNewestSongID()); // Creates a movie object
             return mov; //Returns the movie object
         } catch (SQLServerException ex) {
             throw new daoException("Cannot connect to server");
@@ -131,7 +136,7 @@ public class MovieDAO {
             preparedStmt.setDate(1, date);
             preparedStmt.setInt(2, selectedItem.getID());
             preparedStmt.executeUpdate();
-            Movie mov = new Movie(selectedItem.getName(), selectedItem.getUserRating(), selectedItem.getImdbRating(), date, selectedItem.getUrl(), selectedItem.getID()); //creates a new song object.
+            Movie mov = new Movie(selectedItem.getName(), selectedItem.getUserRating(),  date, selectedItem.getUrl(), selectedItem.getID()); //creates a new song object.
             return mov;
         } catch (SQLServerException ex) {
             throw new daoException("Cannot connect to server");

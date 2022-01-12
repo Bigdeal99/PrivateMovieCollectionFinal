@@ -25,11 +25,10 @@ public class CategoryDao1 {
     public CategoryDao1() {
         catDAO1 = new CatDAO1();
         this.ds = new SQLServerDataSource();
-        ds.setDatabaseName(DBConection.getInstance().getProperty("PrivateMovieCollection"));
-        ds.setUser(DBConection.getInstance().getProperty("CSe21B_12"));
-        ds.setPassword(DBConection.getInstance().getProperty("CSe21B_12"));
-        ds.setServerName(DBConection.getInstance().getProperty("10.176.111.31"));
-        ds.setPortNumber(Integer.parseInt(DBConection.getInstance().getProperty("port")));
+        ds.setDatabaseName(DBConection.getInstance().getProperty("dbname"));
+        ds.setUser(DBConection.getInstance().getProperty("username"));
+        ds.setPassword(DBConection.getInstance().getProperty("password"));
+        ds.setServerName(DBConection.getInstance().getProperty("ip"));
     }
 
 
@@ -48,6 +47,7 @@ public class CategoryDao1 {
         } catch (SQLException ex) {
             throw new daoException("Query cannot be executed");
         }
+    }
 
         public Category updateCategory (Category editingList, String name) throws daoException {
             try (Connection con = ds.getConnection()) {
@@ -116,4 +116,3 @@ public class CategoryDao1 {
             }
         }
     }
-}

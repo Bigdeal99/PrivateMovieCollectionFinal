@@ -17,17 +17,17 @@ public class CatDAO1 {
     SQLServerDataSource ds;
     public CatDAO1() {
         this.ds = new SQLServerDataSource();
-        ds.setDatabaseName(DBConection.getInstance().getProperty("databaseName"));
-        ds.setUser(DBConection.getInstance().getProperty("userName"));
+
+        ds.setDatabaseName(DBConection.getInstance().getProperty("dbname"));
+        ds.setUser(DBConection.getInstance().getProperty("username"));
         ds.setPassword(DBConection.getInstance().getProperty("password"));
         ds.setServerName(DBConection.getInstance().getProperty("ip"));
-        ds.setPortNumber(Integer.parseInt(DBConection.getInstance().getProperty("port")));
     }
     public List<Movie> getCategoryMovie(int id) throws daoException {
         List<Movie> newMovieList = new ArrayList();
         try (Connection con = ds.getConnection()) {
             String query = ""
-                    + "SELECT Movie.name , Movie.userRating , Movie.imdbRating , Movie.lastview , Movie.filelink , Movie.id FROM CatMovie "
+                    + "SELECT Movie.name , Movie.rating , Movie.lastview , Movie.filelink , Movie.id FROM CatMovie "
                     + "INNER JOIN Movie "
                     + "ON CatMovie.MovieId = Movie.id "
                     + "WHERE CatMovie.CategoryId = ? "; // Gets all movies from a coresponding category.
@@ -35,11 +35,12 @@ public class CatDAO1 {
             preparedStmt.setInt(1, id);
             ResultSet rs = preparedStmt.executeQuery();
             while (rs.next()) {
-                Movie mov = new Movie(rs.getString("name"), rs.getInt("userRating"), rs.getInt("imdbRating"), rs.getDate("lastview"), rs.getString("filelink"), rs.getInt("id"));
+                Movie mov = new Movie(rs.getString("name"), rs.getInt("rating"), rs.getDate("lastview"), rs.getString("filelink"), rs.getInt("id"));
                 newMovieList.add(mov); //adds movies to a movie array
             }
             return newMovieList;
         } catch (SQLServerException ex) {
+            System.out.println(ex);
             throw new daoException("Connection to the server failed");
         } catch (SQLException ex) {
             throw new daoException("Query cannot be executed");
