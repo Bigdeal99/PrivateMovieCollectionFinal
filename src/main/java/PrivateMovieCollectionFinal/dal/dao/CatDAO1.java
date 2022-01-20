@@ -27,7 +27,7 @@ public class CatDAO1 {
         List<Movie> newMovieList = new ArrayList();
         try (Connection con = ds.getConnection()) {
             String query = ""
-                    + "SELECT Movie.name , Movie.rating , Movie.lastview , Movie.filelink , Movie.id FROM CatMovie "
+                    + "SELECT Movie.name , Movie.rating ,Movie.imdbRating, Movie.lastview , Movie.filelink , Movie.id FROM CatMovie "
                     + "INNER JOIN Movie "
                     + "ON CatMovie.MovieId = Movie.id "
                     + "WHERE CatMovie.CategoryId = ? "; // Gets all movies from a coresponding category.
@@ -35,7 +35,9 @@ public class CatDAO1 {
             preparedStmt.setInt(1, id);
             ResultSet rs = preparedStmt.executeQuery();
             while (rs.next()) {
-                Movie mov = new Movie(rs.getString("name"), rs.getInt("rating"), rs.getDate("lastview"), rs.getString("filelink"), rs.getInt("id"));
+                Movie mov = new Movie(rs.getString("name"),
+                        rs.getInt("rating"), rs.getDate("lastview"),
+                        rs.getString("filelink"), rs.getInt("id"), (int) rs.getFloat("imdbRating"));
                 newMovieList.add(mov); //adds movies to a movie array
             }
             return newMovieList;

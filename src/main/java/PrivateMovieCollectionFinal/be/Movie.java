@@ -16,12 +16,13 @@ public class Movie {
     private String url;
     private final int ID;
 
-    public Movie(String name, int userRating,  Date lastView, String url, int ID) {
+    public Movie(String name, int userRating,  Date lastView, String url, int ID, int imdbRating) {
         this.name = name;
         this.userRating = userRating;
         this.lastView = lastView;
         this.url = url;
         this.ID = ID;
+        this.imdbRating =imdbRating;
     }
 
     public int getID() {

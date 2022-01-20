@@ -3,11 +3,12 @@ package PrivateMovieCollectionFinal.dal;
 
 import PrivateMovieCollectionFinal.be.Movie;
 import PrivateMovieCollectionFinal.be.Category;
+import PrivateMovieCollectionFinal.bll.IBLLFacade;
 import PrivateMovieCollectionFinal.dal.DAOex.daoException;
 
 import java.util.List;
 
-public interface IDALFacade{
+public interface IDALFacade {
 
     public List<Category> getAllCategories() throws daoException;
 

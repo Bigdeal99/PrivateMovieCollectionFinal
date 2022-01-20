@@ -31,7 +31,8 @@ public class MovieDAO {
                         rs.getInt("rating"),
                         rs.getDate("lastview"),
                         rs.getString("filelink"),
-                        rs.getInt("id"));
+                        rs.getInt("id"),
+                        (int) rs.getFloat("imdbRating"));
                 allMovies.add(mov);
             }
             return allMovies; //Returns the full list
@@ -51,7 +52,7 @@ public class MovieDAO {
             preparedStmt.setInt(1, newRating);
             preparedStmt.setInt(2, selectedItem.getID());
             preparedStmt.executeUpdate();
-            Movie mov = new Movie(selectedItem.getName(), newRating,  selectedItem.getLastView(), selectedItem.getUrl(), selectedItem.getID()); //creates a new song object.
+            Movie mov = new Movie(selectedItem.getName(), newRating,  selectedItem.getLastView(), selectedItem.getUrl(), selectedItem.getID(), selectedItem.getImdbRating()); //creates a new song object.
             return mov;
         } catch (SQLServerException ex) {
             throw new daoException("Cannot connect to server");
@@ -69,7 +70,7 @@ public class MovieDAO {
             preparedStmt.setString(4, url);
             preparedStmt.setInt(5, movieToEdit.getID());
             preparedStmt.executeUpdate();
-            Movie mov = new Movie(name, rating,  movieToEdit.getLastView(), url, movieToEdit.getID()); //creates a new song object.
+            Movie mov = new Movie(name, rating,  movieToEdit.getLastView(), url, movieToEdit.getID(), movieToEdit.getImdbRating()); //creates a new song object.
             return mov;
         } catch (SQLServerException ex) {
             throw new daoException("Cannot connect to server");
@@ -88,7 +89,7 @@ public class MovieDAO {
             ps.setString(4, url);
             ps.addBatch();
             ps.executeBatch();
-            Movie mov = new Movie(name, rating, null, url, getNewestSongID()); // Creates a movie object
+            Movie mov = new Movie(name, rating, null, url, getNewestSongID(), imdbrating); // Creates a movie object
             return mov; //Returns the movie object
         } catch (SQLServerException ex) {
             throw new daoException("Cannot connect to server");
@@ -136,7 +137,7 @@ public class MovieDAO {
             preparedStmt.setDate(1, date);
             preparedStmt.setInt(2, selectedItem.getID());
             preparedStmt.executeUpdate();
-            Movie mov = new Movie(selectedItem.getName(), selectedItem.getUserRating(),  date, selectedItem.getUrl(), selectedItem.getID()); //creates a new song object.
+            Movie mov = new Movie(selectedItem.getName(), selectedItem.getUserRating(),  date, selectedItem.getUrl(), selectedItem.getID(), selectedItem.getImdbRating()); //creates a new song object.
             return mov;
         } catch (SQLServerException ex) {
             throw new daoException("Cannot connect to server");
